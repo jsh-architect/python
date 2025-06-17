@@ -39,17 +39,6 @@ pipeline:
                       python3 -m pip install -e .
                   timeout: ""
                   type: Run
-              - step:
-                  identifier: dockerbuild
-                  name: docker_build
-                  spec:
-                    caching: true
-                    connectorRef: <+input>
-                    repo: shahjay85/jshtest
-                    tags:
-                      - latest
-                  timeout: ""
-                  type: BuildAndPushDockerRegistry
           platform:
             arch: Arm64
             os: MacOS
