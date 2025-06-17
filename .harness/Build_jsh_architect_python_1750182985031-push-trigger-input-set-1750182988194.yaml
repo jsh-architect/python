@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_jsh_architect_python_1750182985031-push-trigger-input-set
+  identifier: Build_jsh_architect_python_1750182985031pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_jsh_architect_python_1750182985031
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
